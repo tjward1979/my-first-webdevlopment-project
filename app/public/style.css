@@ -4,12 +4,13 @@
 
 body {
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Orbitron', 'Century Gothic';
   color: #333;
   margin: 0;
 }
 
 .leader-h {
+  text-align: center;
   width: 100%;
   background-color: #333;
   color: #fafafa;
@@ -17,55 +18,60 @@ body {
   margin: 0;
 }
 
-.tweet-container {
-  margin: 20px auto;
-  width: 80%;
-  padding: 30px;
-  border: 2px solid gray;
-  border-radius: 10px;
+.players-info {
+  margin: 10px 10px 10px 10px;
+  height: 200px;
+  border: 5px solid gray;
+  padding-top: 25px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
-.new-tweet-input {
-  width: 100%;
-  height: 32px;
-  border: 2px solid lightgray;
-  border-radius: 5px;
-  padding-left: 5px;
+.player1-input {
+  margin:  10px 10px 20px 100px;
+  width: 20%;
+  padding: 30px 0px 30px 50px;
+  border: 5px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ff3030;
 }
 
-.new-tweet-input:focus {
+.player2-input {
+  margin: -144px 0px 0px 70%; 
+  width: 20%;
+  padding: 30px 0px 30px 50px;
+  border: 5px solid black;
+  border-radius: 10px;
+  background: #ff3030;
+}
+
+.player1-name-input:focus {
   border-color: #00cccc;
   outline: none;
 }
 
-.btn-tweet {
-  margin-top: 10px;
-  background-color: #33cc00;
-  color: #fafafa;
-  font-size: 16px;
-  float: right;
-  border: none;
-  padding: 7px 14px;
+.player2-name-input:focus {
+  border-color: #00cccc;
+  outline: none;
+}
+
+.player1-name-input {
+  background: #FFFF80;
+  height: 60px;
+  width: 200px;
+  font: Orbitron;
+  font-size: 40px;
+  color: #333;
   border-radius: 5px;
-  cursor: pointer;
 }
 
-.btn-tweet:hover {
-  background-color: #4DE61A;
-}
-
-.btn-tweet:active {
-  background-color: #009900;
-}
-
-.tweet-time {
-  color: gray;
-  font-style: italic;
-  margin-bottom: 10px;
-  font-size: 12px;
-}
-
-.tweet-body {
-  font-size: 20px;
+.player2-name-input {
+  background: #FFFF80;
+  height: 60px;
+  width: 200px;
+  font: Orbitron;
+  font-size: 40px;
+  color: #333;
+  border-radius: 10px;
 }
