@@ -1,31 +1,22 @@
-$.ajax({
-  type: "GET",
-  url:"/ajax",
-  success: function(data) {
-    for (var i = 0; i < data.tweets.length; i++) {
-      appendNewTweet(data.tweets[i]);
-    }
-  }
+$('.new-301-game').click(function() {
+  console.log("Button 301 Clicked");
+
+  $('#P1-score').val('301'); 
+  $('#P2-score').val('301');
 });
 
-function appendNewTweet(tweet) {
-  var newTweet =  "<div class='tweet-container'>" +
-    "<div class='tweet-time'>" + new Date(tweet.time).toLocaleString() + "</div>" +
-    "<div class='tweet-body'>" + tweet.text + "</div>" +
-    "</div>";
+$('.new-501-game').click(function() {
+  console.log("Button 501 Clicked");
 
-  $('#tweets-target').prepend(newTweet);
-}
-
-$('#tweet').click(function() {
-  $.ajax({
-    type: "POST",
-    url: "/ajax",
-    contentType: 'application/json',
-    data: JSON.stringify({tweet: $('#new-tweet').val()}),
-    success: function(data) {
-      appendNewTweet(data);
-      $('#new-tweet').val('');
-    }
-  })
+  $('#P1-score').val('501'); 
+  $('#P2-score').val('501');
 });
+
+function scoreCalc(p1, p2) {
+
+  $('#calculate').click(function() {
+    console.log("Calculate Button Clicked");
+  });
+
+
+};
