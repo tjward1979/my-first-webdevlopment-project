@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html class="" lang="en">
+
+<head>
+<link href='http://fonts.googleapis.com/css?family=Orbitron|Karla:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="darts-calculator">
+            <form name="Calc">
+                <table class="calc-table" border="10">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input class="score-display" type="text" name="Input"></input>
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" onclick="Calc.Input.value += '7'" value=" 7 " name="seven"></input>
+
+<input type="button" onclick="Calc.Input.value += '8'" value=" 8 " name="eight"></input>
+
+<input type="button" onclick="Calc.Input.value += '9'" value=" 9 " name="nine"></input>
+
+<input id="one-touch" type="button" onclick="Calc.Input.value += '140'" value=" 140 " name="oneforty"></input>
+
+<br>
+
+<input type="button" onclick="Calc.Input.value += '4'" value=" 4 " name="four"></input>
+
+<input type="button" onclick="Calc.Input.value += '5'" value=" 5 " name="five"></input>
+
+<input type="button" onclick="Calc.Input.value += '6'" value=" 6 " name="six"></input>
+
+<input id="one-touch" type="button" onclick="Calc.Input.value += '100'" value=" 100 " name="ton"></input>
+
+<br>
+
+<input type="button" onclick="Calc.Input.value += '1'" value=" 1 " name="one"></input>
+
+<input type="button" onclick="Calc.Input.value += '2'" value=" 2 " name="two"></input>
+
+<input type="button" onclick="Calc.Input.value += '3'" value=" 3 " name="three"></input>
+
+<input id="one-touch" type="button" onclick="Calc.Input.value += '60'" value=" 60 " name="sixty"></input>
+
+<br>
+
+<input type="button" onclick="Calc.Input.value = ''" value=" c " name="clear"></input>
+
+<input type="button" onclick="Calc.Input.value += '0'" value=" 0 " name="zero"></input>
+
+<input type="button" onclick="Calc.Input.value += ' + '" value=" + " name="plus"></input>
+
+<input type="button" onclick="Calc.Input.value = eval(Calc.Input.value)" value=" = " name="DoIt"></input>
+
+<br>
+<input id="calculate" class="score" type="button" value="SCORE!"></input>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    </body>
+</html>
