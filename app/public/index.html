@@ -14,8 +14,10 @@
       <input placeholder="Player 1" type="text" class="player1-name-input">
     </div>
     <div class="game-info">
-      <button class="new-301-game" id="301game">New 301 Game!</button>
+      <button class="new-301-game" id="301game" disable="false">New 301 Game!</button>
       <button class="new-501-game" id="501game">New 501 Game!</button>
+      <button class="start-game-player1" id="P1-new-game">Start Game Player 1</button>
+      <button class="start-game-player2" id="P2-new-game">Start Game Player 2</button>
     </div>
     <div class="player2-input">
       <input placeholder="Player 2" type="text" class="player2-name-input">
@@ -30,7 +32,7 @@
         <tbody class="calc-body">
           <tr>
             <td>
-              <input class="score-display" type="text" name="Input"></input>
+              <input class="score-display" id="current-score" type="text" name="Input"></input>
               <br>
             </td>
           </tr>
@@ -39,24 +41,26 @@
               <input type="button" onclick="Calc.Input.value += '7'" value=" 7 " name="seven"></input>
               <input type="button" onclick="Calc.Input.value += '8'" value=" 8 " name="eight"></input>
               <input type="button" onclick="Calc.Input.value += '9'" value=" 9 " name="nine"></input>
-              <input id="one-touch" type="button" onclick="Calc.Input.value += '140'" value=" 140 " name="oneforty"></input>
+              <input id="one-touch" type="button" onclick="Calc.Input.value += '180'" value=" 180 " name="oneeighty"></input>
+             
               <br>
               <input type="button" onclick="Calc.Input.value += '4'" value=" 4 " name="four"></input>
               <input type="button" onclick="Calc.Input.value += '5'" value=" 5 " name="five"></input>
               <input type="button" onclick="Calc.Input.value += '6'" value=" 6 " name="six"></input>
-              <input id="one-touch" type="button" onclick="Calc.Input.value += '100'" value=" 100 " name="ton"></input>
+              <input id="one-touch" type="button" onclick="Calc.Input.value += '140'" value=" 140 " name="oneforty"></input>
               <br>
               <input type="button" onclick="Calc.Input.value += '1'" value=" 1 " name="one"></input>
               <input type="button" onclick="Calc.Input.value += '2'" value=" 2 " name="two"></input>
               <input type="button" onclick="Calc.Input.value += '3'" value=" 3 " name="three"></input>
-              <input id="one-touch" type="button" onclick="Calc.Input.value += '60'" value=" 60 " name="sixty"></input>
+              <input id="one-touch" type="button" onclick="Calc.Input.value += '100'" value=" 100 " name="ton"></input>
               <br>
               <input type="button" onclick="Calc.Input.value = ''" value=" c " name="clear"></input>
               <input type="button" onclick="Calc.Input.value += '0'" value=" 0 " name="zero"></input>
               <input type="button" onclick="Calc.Input.value += ' + '" value=" + " name="plus"></input>
-              <input type="button" onclick="Calc.Input.value = eval(Calc.Input.value)" value=" = " name="DoIt"></input>
+              <input id="one-touch" type="button" onclick="Calc.Input.value += '60'" value=" 60 " name="sixty"></input>
               <br>
               <input id="calculate" class="score" type="button" value="SCORE!"></input>
+              <input id="one-touch" type="button" onclick="Calc.Input.value = eval(Calc.Input.value)" value=" = " name="DoIt"></input>
             </td>
           </tr>
         </tbody>
