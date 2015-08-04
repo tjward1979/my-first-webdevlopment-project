@@ -163,6 +163,13 @@ body {
   font-family: 'Karla', sans-serif;
   background: #ffe28a;
 }
+ 
+.new-301-game.active {
+  border-style: inset;
+  background-color: #ff3030;
+  color: #FFF;
+ 
+}
 
 .new-501-game {
   position: relative;
@@ -173,6 +180,48 @@ body {
   font-family: 'Karla', sans-serif;
   background: #ffe28a;
 }
+
+.new-501-game.active {
+  border-style: inset;
+  background-color: #ff3030;
+  color: #FFF;
+}
+
+
+.start-game-player1 {
+  position: relative;
+  float: left;
+  top: 60px;
+  left: 120px;
+  height: 40px;
+  font-family: 'Karla', sans-serif;
+  background: #ffe28a; 
+}
+
+.start-game-player1.active {
+  border-style: inset;
+  background-color: #ff3030;
+  color: #FFF;
+}
+
+
+.start-game-player2 {
+  position: relative;
+  float: right;
+  top: 60px;
+  right: 120px;
+  height: 40px;
+  font-family: 'Karla', sans-serif;
+  background: #ffe28a;
+}
+
+.start-game-player2.active {
+  border-style: inset;
+  background-color: #ff3030;
+  color: #FFF;
+}
+
+
 .calc-table {
   position: relative;
   float: left;
@@ -205,7 +254,7 @@ input[TYPE=button] {
   position: relative;
   margin: 0px;
   font-size: 50px;
-  width: 100%;
+  width: 60%;
   
 }
 
