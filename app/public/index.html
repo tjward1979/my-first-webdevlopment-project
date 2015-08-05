@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Darts Scoreboard</title>
-  <link href='http://fonts.googleapis.com/css?family=Orbitron|Karla:400,700|Schoolbell' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+    
+  </head>
 
-  <h1 class="leader-h">Darts Scoreboard</h1>
-  <div class="players-info">
-    <div class="player1-input">
-      <input placeholder="Player 1" type="text" class="player1-name-input">
+  <body>
+    <div class="nav">
+      <div class="container">
+        <ul class ="pull-left">
+          <li><a href="#">Dart scoreboard</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="game-info">
-      <button class="new-301-game" id="301game" disable="false">New 301 Game!</button>
-      <button class="new-501-game" id="501game">New 501 Game!</button>
-      <button class="start-game-player1" id="P1-new-game">Start Game Player 1</button>
-      <button class="start-game-player2" id="P2-new-game">Start Game Player 2</button>
-    </div>
-    <div class="player2-input">
-      <input placeholder="Player 2" type="text" class="player2-name-input">
-    </div>
-  </div> 
-  <div class="player1-score">
-    <input id="P1-score" type="text" name="start-score" value="" readonly></input>
-  </div>  
-  <div class="darts-calculator">
-    <form name="Calc">
-      <table class="calc-table" border="5">
-        <tbody class="calc-body">
-          <tr>
-            <td>
-              <input class="score-display" id="current-score" type="text" name="Input"></input>
-              <br>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <input type="button" onclick="Calc.Input.value += '7'" value=" 7 " name="seven"></input>
-              <input type="button" onclick="Calc.Input.value += '8'" value=" 8 " name="eight"></input>
-              <input type="button" onclick="Calc.Input.value += '9'" value=" 9 " name="nine"></input>
-              <input id="one-touch" type="button" onclick="Calc.Input.value += '180'" value=" 180 " name="oneeighty"></input>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Darts Scoreboard</h1>
+        <p>Score and track stats</p>
+      </div>
+    </div>    
+    <div class="site-apps">
+      <div class="container">
+       <h2>Site Applications</h2>
+        <p>For scoring, tracking stats, following players and practce tips</p>
+            
+      <div class="row">
+       <div class="col-md-4">
+        <div class="thumbnail">
+         <img src="http://www.craftsmancues.com/acatalog/chalkie+.jpg">
+        </div>
+        <div class="thumbnail">
+         <img src="http://cdnlava360.saturn.netdna-cdn.com/wp-content/uploads/2011/10/Tracking-the-Stats.jpg">
+        </div>
+      </div>            
+            
+       <div class="col-md-4">
+        <div class="thumbnail">
+         <img src="http://e0.365dm.com/14/02/16-9/20/premier-league-darts-live-sky-sports_3078527.jpg?20140205111801">
+        </div>
+        <div class="thumbnail">
+         <img src="http://www.audiodartmaster.com/images/ADM-logo.png">
+         </div>
+       </div>
              
-              <br>
-              <input type="button" onclick="Calc.Input.value += '4'" value=" 4 " name="four"></input>
-              <input type="button" onclick="Calc.Input.value += '5'" value=" 5 " name="five"></input>
-              <input type="button" onclick="Calc.Input.value += '6'" value=" 6 " name="six"></input>
-              <input id="one-touch" type="button" onclick="Calc.Input.value += '140'" value=" 140 " name="oneforty"></input>
-              <br>
-              <input type="button" onclick="Calc.Input.value += '1'" value=" 1 " name="one"></input>
-              <input type="button" onclick="Calc.Input.value += '2'" value=" 2 " name="two"></input>
-              <input type="button" onclick="Calc.Input.value += '3'" value=" 3 " name="three"></input>
-              <input id="one-touch" type="button" onclick="Calc.Input.value += '100'" value=" 100 " name="ton"></input>
-              <br>
-              <input type="button" onclick="Calc.Input.value = ''" value=" c " name="clear"></input>
-              <input type="button" onclick="Calc.Input.value += '0'" value=" 0 " name="zero"></input>
-              <input type="button" onclick="Calc.Input.value += ' + '" value=" + " name="plus"></input>
-              <input id="one-touch" type="button" onclick="Calc.Input.value += '60'" value=" 60 " name="sixty"></input>
-              <br>
-              <input id="calculate" class="score" type="button" value="SCORE!"></input>
-              <input id="one-touch" type="button" onclick="Calc.Input.value = eval(Calc.Input.value)" value=" = " name="DoIt"></input>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </form>
-  </div>
-  <div class="player2-score">
-    <input id="P2-score" type="text" name="start-score" value="" readonly></input>
-  </div>
-  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="scoreboard.js"></script>
-
-<script type="text/javascript">
-</script>
-</body>
+       <div class="col-md-4">
+        <div class="thumbnail">
+         <img src="http://www.dartsperformancecentre.com/dpc/images/DPC%20Practice%20Plan(1).png">
+        </div>
+      </div>
+    </div> 
+    
+        <a href="#">Learn More</a>
+      </div>
+    </div> 
+  
+    <div class="learn-more">
+	  <div class="container">
+		<div class="row">
+	      <div class="col-md-4">
+			<h3>Darts Equipment</h3>
+			<p>Buy darts equipment from UK leading suppiers</p>
+			<p><a href="#">Darts Corner</a></p>
+	      </div>
+		  <div>
+			<h3>Professional Darts Corporation</h3>
+			<p>Search events and buy tickets</p>
+			<p><a href="#">PDC website</a></p>
+		  </div>
+		  <div>
+			<h3>British Darts Organisation</h3>
+			<p>Search events and player info</p>
+			<p><a href="#">BDO Website</a></p>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+  </body>
 </html>
