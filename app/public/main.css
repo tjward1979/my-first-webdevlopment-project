@@ -25,7 +25,7 @@
 .jumbotron h1 {
   color: #fff;
   font-size: 48px;  
-  font-family: 'Shift', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .learn-more h3 {
-  font-family: 'Shift', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: bold;
 }
@@ -56,9 +56,12 @@
 .site-apps h2 {
     color: #393c3d;
     font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 .site-apps p {
     font-size: 15px;
     margin-bottom: 13px;
+   font-family: 'Roboto', sans-serif;
 }
