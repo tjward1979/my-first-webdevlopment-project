@@ -146,7 +146,7 @@ body {
   position: relative;
   float: left;
   top: -120px;
-  left: 272px;;
+  left: 276px;
   height: 120px;
   width: 59%;
   border: 5px solid #099f00;
@@ -156,29 +156,40 @@ body {
 
 .new-301-game {
   position: relative;
-  float: right;
+  float: left;
   top: 10px;
-  right: 260px;
+  left: 10px;
   height: 40px;
   font-family: 'Karla', sans-serif;
-  background: #ffe28a;
+  background: #099f00;
+  border-radius: 20px;
 }
  
+.new-301-game:hover {
+  background: #00ff00;
+  color: #FFF;
+}
+
 .new-301-game.active {
   border-style: inset;
   background-color: #ff3030;
   color: #FFF;
- 
 }
 
 .new-501-game {
   position: relative;
-  float: left;
+  float: right;
   top: 10px;
-  left: 260px;
+  right: 10px;
   height: 40px;
   font-family: 'Karla', sans-serif;
-  background: #ffe28a;
+  background: #099f00;
+  border-radius: 20px;
+}
+
+.new-501-game:hover {
+  background: #00ff00;
+  color: #FFF;
 }
 
 .new-501-game.active {
@@ -191,11 +202,12 @@ body {
 .start-game-player1 {
   position: relative;
   float: left;
-  top: 60px;
-  left: 120px;
+  top: 50px;
+  left: 20px;
   height: 40px;
   font-family: 'Karla', sans-serif;
   background: #ffe28a; 
+  border-radius: 20px;
 }
 
 .start-game-player1.active {
@@ -208,11 +220,12 @@ body {
 .start-game-player2 {
   position: relative;
   float: right;
-  top: 60px;
-  right: 120px;
+  top: 50px;
+  right: 20px;
   height: 40px;
   font-family: 'Karla', sans-serif;
   background: #ffe28a;
+  border-radius: 20px;
 }
 
 .start-game-player2.active {
@@ -221,6 +234,22 @@ body {
   color: #FFF;
 }
 
+#start-game {
+  position: relative;
+  float: left;
+  top: 60px;
+  left: 75px;
+  height: 40px;
+  font-family: 'Orbitron', sans-serif;
+  background: #ffe28a;
+  border-radius: 20px;
+}
+
+#start-game.active {
+  border-style: inset;
+  background-color: #ff3030;
+  color: #FFF;
+}
 
 .calc-table {
   position: relative;
